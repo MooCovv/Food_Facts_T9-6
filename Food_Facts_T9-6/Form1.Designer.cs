@@ -28,13 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bananaRadioButton = new System.Windows.Forms.RadioButton();
+            this.popcornRadioButton = new System.Windows.Forms.RadioButton();
+            this.muffinRadioButton = new System.Windows.Forms.RadioButton();
+            this.displayButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.muffinRadioButton);
+            this.groupBox1.Controls.Add(this.popcornRadioButton);
+            this.groupBox1.Controls.Add(this.bananaRadioButton);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Select a food";
+            // 
+            // bananaRadioButton
+            // 
+            this.bananaRadioButton.AutoSize = true;
+            this.bananaRadioButton.Location = new System.Drawing.Point(27, 23);
+            this.bananaRadioButton.Name = "bananaRadioButton";
+            this.bananaRadioButton.Size = new System.Drawing.Size(70, 17);
+            this.bananaRadioButton.TabIndex = 0;
+            this.bananaRadioButton.TabStop = true;
+            this.bananaRadioButton.Text = "1 banana";
+            this.bananaRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // popcornRadioButton
+            // 
+            this.popcornRadioButton.AutoSize = true;
+            this.popcornRadioButton.Location = new System.Drawing.Point(27, 46);
+            this.popcornRadioButton.Name = "popcornRadioButton";
+            this.popcornRadioButton.Size = new System.Drawing.Size(159, 17);
+            this.popcornRadioButton.TabIndex = 1;
+            this.popcornRadioButton.TabStop = true;
+            this.popcornRadioButton.Text = "1 cup of air-popped popcorn";
+            this.popcornRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // muffinRadioButton
+            // 
+            this.muffinRadioButton.AutoSize = true;
+            this.muffinRadioButton.Location = new System.Drawing.Point(27, 69);
+            this.muffinRadioButton.Name = "muffinRadioButton";
+            this.muffinRadioButton.Size = new System.Drawing.Size(134, 17);
+            this.muffinRadioButton.TabIndex = 2;
+            this.muffinRadioButton.TabStop = true;
+            this.muffinRadioButton.Text = "1 large blueberry muffin";
+            this.muffinRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // displayButton
+            // 
+            this.displayButton.Location = new System.Drawing.Point(12, 138);
+            this.displayButton.Name = "displayButton";
+            this.displayButton.Size = new System.Drawing.Size(80, 34);
+            this.displayButton.TabIndex = 1;
+            this.displayButton.Text = "Display Food Facts";
+            this.displayButton.UseVisualStyleBackColor = true;
+            this.displayButton.Click += new System.EventHandler(this.displayButton_Click);
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(131, 138);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(80, 34);
+            this.exitButton.TabIndex = 2;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(223, 186);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.displayButton);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton muffinRadioButton;
+        private System.Windows.Forms.RadioButton popcornRadioButton;
+        private System.Windows.Forms.RadioButton bananaRadioButton;
+        private System.Windows.Forms.Button displayButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 
